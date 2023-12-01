@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html>
-<%- include("./partials/head.ejs")%>
-<body>
     <%- include("./partials/header.ejs")%>
-
+    <body>
     <!-- Page content -->
     <div class="ps-content">
 
@@ -20,7 +16,7 @@
 
         <div class="ps-col l6 ps-padding-large ps-img-menu">
         <img
-            src="/images/<%= producto.imagen %>"
+            src="/images/<%= producto.imagen? producto.imagen:"no imagen.png"  %>"
             class="ps-round ps-image ps-opacity-min"
             alt="Menu"
         />
